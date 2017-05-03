@@ -1,0 +1,39 @@
+.flex-container {
+    display: flex;
+}
+
+main {
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.table-row {
+    /* display depende del navegador
+    Ponemos el estándar al final */
+    display: -webkit-flex; /* Chrome */
+    display: inline-flex; /* IE 9 */
+    display: flex; /* W3C estándar */
+}
+
+.wrapper {
+    display: -webkit-flex;
+    display: inline-flex;
+    display: flex;
+}
+
+.colum {
+    -webkit-flex-grow: 0;
+    flex-grow: 0;
+    -webkit-flex-shrink: 0;
+    flex-shrink: 0;
+    vertical-align: top;
+}
+
+.name-surname-dni,
+.name-surname,
+.address-city-postalcode,
+.telephone-email {
+    /* todas estas van a crecer. Son hijos y padres. */
+    -webkit-flex-grow: 1;
+    flex-grow: 1;
+}

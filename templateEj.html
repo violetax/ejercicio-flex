@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Vistas con FlexBox</title>
+    <link rel="stylesheet" href="css/templateEj.css">
+</head>
+<body>
+<main class="flex-container">
+    <section>
+        <header><h2>Título sección</h2></header>
+        <div>
+            <article>
+                <header><h3>Título artículo</h3></header>
+                <div>
+                    <div>
+                        <img src="" alt="imagen">
+                    </div>
+                    <div>Texto a la derecha</div>
+                </div>
+                <div>
+                    <div>
+                        Texto a ocultar.
+                    </div>
+                    <a href="#">Leer más</a>
+                </div>
+            </article>
+        </div>
+    </section>
+    <section id="tablaFlex">
+        <header><h2>Tabla responsive con Flex</h2></header>
+        <div id="datosAlumnos">
+            <div class="table-row header">
+                <div class="colum index"><input type="checkbox" value="-1" name="codigo"></div>
+                <div class="wrapper name-surname-dni">
+                    <div class="wrapper name-surname">
+                        <div class="wrapper">
+                            <div class="colum name">Nombre</div>
+                            <div class="colum surname">Apellidos</div>
+                        </div>
+                        <div class="colum dni">DNI</div>
+                    </div>
+                </div>
+                <div class="colum date-of-birth">Fecha de nacimiento</div>
+                <div class="wrapper telephone-email">
+                    <div class="colum telephone">Teléfono</div>
+                    <div class="colum email">Email</div>
+                </div>
+                <div class="wrapper address-city-postalcode">
+                    <div class="colum address">Dirección</div>
+                    <div class="colum city">Población</div>
+                    <div class="colum postalcode">C.P.</div>
+                </div>
+            </div>
+            <div class="table-row">
+            </div>
+        </div>
+    </section>
+</main>
+</body>
+</html>
