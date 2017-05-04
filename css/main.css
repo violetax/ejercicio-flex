@@ -117,6 +117,7 @@ footer img {
 }
 
 /* Medium Devices, Desktops */
+/* a/p de 992 es ya un ordenador */
 @media only screen and (min-width : 992px) {
     article > div:last-child {
         visibility: visible;
