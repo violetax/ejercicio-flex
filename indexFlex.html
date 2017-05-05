@@ -3,7 +3,6 @@
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta charset="UTF-8">
-
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="fonts/font-awesome/css/font-awesome.min.css"/>
     <link rel="stylesheet" href="css/styles.css">
@@ -56,11 +55,6 @@
         </nav>
     </header>
     -->
-<header>
-    <div class="media-query-size">
-        <!--div><img src="images/marcas-logos.png" alt="imagen"></div-->
-    </div>
-</header>
 <div id="wrapper">
     <h1>Ejemplos de CSS3 y HTML5</h1>
     <main class="flex-container">
@@ -93,13 +87,28 @@
                         <a class="laptop_invisible" href="#">Leer Mas</a>
                     </div>
                 </article>
+                <article class="flex-container">
+                    <header><h3>Titulo Articulo</h3></header>
+                    <div class="flex-container">
+                        <div><img src="images/blank-profile-pic.png" alt="imagen"></div>
+                        <div>Texto a a la derecha</div>
+                    </div>
+                    <div>
+                        <div class="movil_invisible">
+                            Texto a ocultar
+                        </div>
+                        <a class="laptop_invisible" href="#">Leer Mas</a>
+                    </div>
+                </article>
             </div>
         </section>
         <section id="tablaFlex">
             <header><h2>Tabla Responsive Con Flex</h2></header>
             <div id="datosAlumnos">
                 <div class="table-row header">
-            <!-- <div class="colum index"><input type="checkbox" value="-1" name="codigo"> </div>-->
+                    <!--
+                    <div class="colum index"><input type="checkbox" value="-1" name="codigo"> </div>
+                    -->
                     <div class="wrapper name-surname-dni-date_of_birth">
                         <div class="wrapper name-surname-dni">
                             <div class="wrapper name-surname">
@@ -114,6 +123,7 @@
                         <div class="colum email">Email</div>
                         <div class="colum telephone">Telefono</div>
                     </div>
+
                     <div class="wrapper address-city-zip_code">
                         <div class="colum address">Dirección</div>
                         <div class="colum city">Poblacion</div>
@@ -123,57 +133,74 @@
                     </div>
                 </div>
                 <div class="table-row">
-                <!-- <div class="colum index"><input type="checkbox" value="-1" name="codigo"></div> -->
+                    <!--
+                    <div class="colum index"><input type="checkbox" value="-1" name="codigo"> </div>
+                    -->
                     <div class="wrapper name-surname-dni-date_of_birth">
                         <div class="wrapper name-surname-dni">
                             <div class="wrapper name-surname">
-                                <div class="colum name">Lola</div>
-                                <div class="colum surname">Lolailo</div>
+                                <div class="colum name">Maite</div>
+                                <div class="colum surname">Monasterio</div>
                             </div>
                             <div class="colum dni">DNI</div>
                         </div>
-                        <div class="colum date_of_birth">F. Nacimiento</div>
+                        <div class="colum date_of_birth">F Nacimiento</div>
                     </div>
                     <div class="wrapper email-telephone">
                         <div class="colum email">Email</div>
                         <div class="colum telephone">Telefono</div>
                     </div>
+
                     <div class="wrapper address-city-zip_code">
                         <div class="colum address">Dirección</div>
                         <div class="colum city">Poblacion</div>
                         <div class="colum zip_code">C.P.</div>
                     </div>
                     <div class="wrapper actions">
-                        <div class="edit"><a data-codigo="2" href="#">Editar</a> </div>
-                        <div class="delete"><a data-codigo="2" href="#">Borrar</a></div>
+                        <div><a data-codigo="2" href="#">Editar</a> </div>
+                        <div><a data-codigo="2" href="#">Borrar</a></div>
                     </div>
                 </div>
             </div>
+
         </section>
         <section>
             <header><h2>Animation</h2></header>
-            <div class="flex-container">
-                <div id='c'>
-                    <div class='s'></div>
-                    <div class='s'></div>
-                    <div class='s'></div>
-                    <div class='s'></div>
-                    <div class='s'></div>
-                    <div class='s'></div>
-                </div>
+            <div id="slider">
+                <figure>
+                    <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/4273/austin-fireworks.jpg" alt>
+                    <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/4273/taj-mahal_copy.jpg" alt>
+                    <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/4273/ibiza.jpg" alt>
+                    <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/4273/ankor-wat.jpg" alt>
+                    <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/4273/austin-fireworks.jpg" alt>
+                </figure>
             </div>
         </section>
     </main>
     <footer>
         <!-- WAI - ARIA -->
         <!-- data-toggle="5"-->
-        RRSS:
-        <div class="flex-container size_rrss">
-            <span class="fa fa-facebook-square" aria-hidden="true"></span>
-            <span class="fa fa-linkedin"></span>
-            <span class="fa fa-twitter"></span>
-            <span class="fa fa-skype"></span>
-        </div>
+        RRSS: <a><span class="fa fa-facebook-square size_rrss" aria-hidden="true"></span></a>
+        <ul class="rrss">
+            <li >
+                <a href="https://www.linkedin.com/">
+                    <img alt="linkedin" title="linkedin" class="linkedin" src="image/1x1.png">
+                </a>
+            </li>
+            <li>
+                <a href="https://www.linkedin.com/">
+                    <img alt="twitter" title="twitter" class="twitter" src="image/1x1.png">
+                </a>
+
+            </li>
+            <li class="skype">
+                <a href="https://www.linkedin.com/">
+                    <img alt="skype" title="skype" class="skype" src="image/1x1.png">
+                </a>
+            </li>
+        </ul>
+
+
     </footer>
 </div>
 </body>
