@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script src="https://afarkas.github.io/respimage/respimage.js" async=""></script>
+<p>variable responsive image with srcset and sizes. CARGA LA MISMA IMAGEN, LO QUE VARIA ES EL MARGEN</p>
+<img
+        srcset="http://placehold.it/250x107 250w,
+    	http://placehold.it/466x200 466w,
+		http://placehold.it/700x300 700w,
+		http://placehold.it/1050x450 1050w,
+		http://placehold.it/1400x600 1400w"
+        sizes="(max-width: 1000px) calc(100vw - 20px), 1000px"
+        src="http://placehold.it/250x107"
+        alt="flexible image" />
+
+<p><a href="https://github.com/aFarkas/respimage" target="_blank">respimage polyfill</a></p>
+</body>
+</html>
